@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="L8w-Kf-sGE" customClass="EYEMainTabView" customModule="imitateKaiYanApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8bP-MB-sZP">
+                    <rect key="frame" x="0.0" y="0.0" width="106.5" height="40"/>
+                    <state key="normal" title="ButtonOne"/>
+                    <connections>
+                        <action selector="buttonOneClick:" destination="L8w-Kf-sGE" eventType="touchUpInside" id="ANf-fl-E3Z"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zFc-wb-KVm">
+                    <rect key="frame" x="213" y="0.0" width="106.5" height="40"/>
+                    <state key="normal" title="ButtonThree"/>
+                    <connections>
+                        <action selector="buttonThreeClick:" destination="L8w-Kf-sGE" eventType="touchUpInside" id="01n-uW-d7l"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sdn-l1-bo7">
+                    <rect key="frame" x="106" y="0.0" width="107" height="40"/>
+                    <state key="normal" title="ButtonTwo"/>
+                    <connections>
+                        <action selector="buttonTwoClick:" destination="L8w-Kf-sGE" eventType="touchUpInside" id="rkW-kg-KIj"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ar2-7c-rEe">
+                    <rect key="frame" x="107" y="5" width="1" height="30"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="1" id="TUB-b0-jkE"/>
+                        <constraint firstAttribute="height" constant="30" id="Z5Y-Ie-26e"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vvS-k4-sGS">
+                    <rect key="frame" x="214" y="5" width="1" height="30"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="8D6-2C-vso"/>
+                        <constraint firstAttribute="width" constant="1" id="twP-94-o4K"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="zFc-wb-KVm" secondAttribute="trailing" id="01p-Ke-loM"/>
+                <constraint firstItem="8bP-MB-sZP" firstAttribute="top" secondItem="L8w-Kf-sGE" secondAttribute="top" id="ApT-2q-Z8a"/>
+                <constraint firstItem="ar2-7c-rEe" firstAttribute="leading" secondItem="8bP-MB-sZP" secondAttribute="trailing" constant="1" id="JfK-gK-a9B"/>
+                <constraint firstItem="ar2-7c-rEe" firstAttribute="centerY" secondItem="L8w-Kf-sGE" secondAttribute="centerY" id="K5B-cW-poE"/>
+                <constraint firstItem="zFc-wb-KVm" firstAttribute="width" secondItem="8bP-MB-sZP" secondAttribute="width" id="Ke7-U2-NIB"/>
+                <constraint firstItem="Sdn-l1-bo7" firstAttribute="top" secondItem="L8w-Kf-sGE" secondAttribute="top" id="QyX-Eb-yzF"/>
+                <constraint firstItem="Sdn-l1-bo7" firstAttribute="leading" secondItem="8bP-MB-sZP" secondAttribute="trailing" id="RKa-qY-Gpq"/>
+                <constraint firstAttribute="bottom" secondItem="8bP-MB-sZP" secondAttribute="bottom" id="SqB-Z8-cvj"/>
+                <constraint firstItem="vvS-k4-sGS" firstAttribute="centerY" secondItem="L8w-Kf-sGE" secondAttribute="centerY" id="Z94-Wg-Ak5"/>
+                <constraint firstItem="Sdn-l1-bo7" firstAttribute="width" secondItem="8bP-MB-sZP" secondAttribute="width" id="ZWK-bN-zhN"/>
+                <constraint firstAttribute="bottom" secondItem="zFc-wb-KVm" secondAttribute="bottom" id="kWg-RK-Qnw"/>
+                <constraint firstItem="zFc-wb-KVm" firstAttribute="leading" secondItem="Sdn-l1-bo7" secondAttribute="trailing" id="kng-sy-rts"/>
+                <constraint firstItem="zFc-wb-KVm" firstAttribute="top" secondItem="L8w-Kf-sGE" secondAttribute="top" id="nDg-bh-aes"/>
+                <constraint firstItem="8bP-MB-sZP" firstAttribute="leading" secondItem="L8w-Kf-sGE" secondAttribute="leading" id="oSt-bQ-osh"/>
+                <constraint firstAttribute="bottom" secondItem="Sdn-l1-bo7" secondAttribute="bottom" id="pkW-Aa-IWx"/>
+                <constraint firstItem="vvS-k4-sGS" firstAttribute="leading" secondItem="Sdn-l1-bo7" secondAttribute="trailing" constant="1" id="sV7-fg-g5C"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="ButtonOne" destination="8bP-MB-sZP" id="wnu-Bc-oIb"/>
+                <outlet property="ButtonThree" destination="zFc-wb-KVm" id="eEW-tZ-ibw"/>
+                <outlet property="ButtonTwo" destination="Sdn-l1-bo7" id="L4m-85-gPC"/>
+            </connections>
+            <point key="canvasLocation" x="184" y="531"/>
+        </view>
+    </objects>
+</document>
